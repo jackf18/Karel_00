@@ -2,8 +2,8 @@
 *
 * Description of the program goes here  // provide a brief description
 *
-* @author <Your Name here>  // replace <...> with your name
-* @version <date/of/completion> // replace <...> with the date
+* @author <Jack Flaherty>  // replace <...> with your name
+* @version <10/22/14> // replace <...> with the date
 */
 
 import edu.fcps.karel2.Display;
@@ -14,9 +14,17 @@ public class Lab00 {
      public static void main(String[] args) {
              Display.openWorld("maps/first.map");
    Display.setSize(10, 10);
-   Display.setSpeed(3);
+   Display.setSpeed(4);
    Robot karel = new Robot();
+   
    karel.move();
+   karel.pickBeeper();
    karel.move();
-     }
+   karel.turnLeft();
+   karel.move();
+   karel.putBeeper();
+   karel.move();
+   karel.turnLeft();
+   karel.turnLeft();
+        }
 }
